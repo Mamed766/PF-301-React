@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .defaul_btn {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded disabled:bg-slate-500 hover:bg-blue-700;
+  }
+  .primary_btn {
+    @apply bg-green-500 text-white font-bold py-2 px-4 rounded disabled:bg-slate-500 hover:bg-green-700;
+  }
+  .secondary_btn {
+    @apply bg-red-500 text-white font-bold py-2 px-4 rounded disabled:bg-slate-500 hover:bg-red-700;
+  }
+  .warning_btn {
+    @apply bg-yellow-500 text-white font-bold py-2 px-4 rounded disabled:bg-slate-500 hover:bg-yellow-700;
+  }
+  .base_input {
+    @apply border border-gray-300 w-full my-2 rounded-md py-2 px-4 outline-none focus:border-blue-500 focus:outline-none;
+  }
+  .md_input {
+    @apply border border-gray-300 w-1/2 my-2 rounded-md py-2 px-4 outline-none focus:border-blue-500 focus:outline-none;
+  }
+}
