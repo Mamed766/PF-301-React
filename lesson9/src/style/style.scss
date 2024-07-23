@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .active_link {
+    @apply bg-blue-600 text-white transition-all delay-200 rounded-md px-4 py-3;
+  }
+  .default_link {
+    @apply text-gray-600 hover:bg-gray-200 transition-all delay-200 rounded-md px-4 py-3;
+  }
+  .container {
+    @apply mx-auto px-4 max-w-[1440px];
+  }
+  .primary-btn {
+    @apply bg-blue-600 text-white rounded-md px-4 py-3 flex justify-center items-center gap-3;
+  }
+  .error_btn {
+    @apply bg-red-600 text-white rounded-md px-4 py-3  flex justify-center items-center gap-3;
+  }
+  .success_btn {
+    @apply bg-green-600 text-white rounded-md px-4 py-3  flex justify-center items-center gap-3;
+  }
+  .warning_btn {
+    @apply bg-yellow-600 text-white rounded-md px-4 py-3  flex justify-center items-center gap-3;
+  }
+  .base_input {
+    @apply w-full border border-gray-300 rounded-xl py-4 px-4  focus:outline-none focus:border-blue-500;
+  }
+}
